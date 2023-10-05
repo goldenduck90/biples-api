@@ -40,8 +40,8 @@ app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 
 //using user route
-app.use("/biples/auth", userRoutes);
-app.use("/biples/community", communityRoutes);
+app.use("/auth", userRoutes);
+app.use("/community", communityRoutes);
 
 //setup server to listen on port 8080
 app.listen(process.env.PORT || 8080, () => {
