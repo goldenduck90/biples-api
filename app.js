@@ -29,8 +29,9 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://biples.netlify.app",
-      "https://biples-beta.netlify.app",
+      "https://dev.biples.com",
+      "https://staging.biples.com",
+      "https://biples.com",
     ],
   })
 );
