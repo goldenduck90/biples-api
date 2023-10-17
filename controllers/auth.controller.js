@@ -64,7 +64,7 @@ exports.checkEmail = (req, res) => {
       }
       if (user) {
         return res.status(501).send({
-          message: "Emall is already exist"
+          message: "Email is already exist"
         })
       }
       return res.status(200).send({ available: true })
@@ -132,7 +132,7 @@ const _signIn = (req, res, community = null) => {
         smartNoti: user.smartNoti,
         language: user.language
       },
-      message: "Login successfull",
+      message: "Login successful",
       accessToken: token,
       community,
     });
