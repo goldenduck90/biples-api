@@ -29,9 +29,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://dev.biples.com",
-      "https://staging.biples.com",
-      "https://biples.com",
+      "https://dev.tailapp.rodeo",
+      "https://tailapp.rodeo",
     ],
   })
 );
